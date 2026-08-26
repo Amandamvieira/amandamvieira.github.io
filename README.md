@@ -1,107 +1,69 @@
-# Portfolio amanda 
+# Portfolio Amanda - Code Export for Claude Code
 
-## Overview
-Portfolio visual de design completo com historico de projetos (Naches e Noticiato), case studies interativos e identidade baseada em ilustracao feita a mao. O design e tematico (feira de rua) com tipografia ludica (Baloo 2) e paleta quente.
+This export contains everything needed to recreate Amanda's portfolio in your preferred framework (React, Next.js, Vue).
 
-## About the Design Files
-Os arquivos HTML neste bundle sao prototipos de design em HTML puro mostrando aparencia e comportamento pretendidos. A tarefa e recriar estes designs no seu codebase (React, Next.js, Vue, ou outro framework) usando seus padroes e bibliotecas existentes. Nao e para copiar o HTML direto. Os componentes interativos (abas, carrosséis, animacoes) devem ser implementados com as ferramentas do seu stack.
+## What's Included
 
-## Fidelity
-High-fidelity (hifi): Layouts pixel-perfect com cores finais, tipografia exata (Baloo 2 para titulos, DM Sans para corpo), espacamento preciso. Recrie usando os estilos do seu codebase mas mantendo as proporcoes e hierarquias.
+1. **IMPLEMENTATION_GUIDE.md** — Full technical specs, component breakdown, and build checklist
+2. **translations.ts** — 100+ PT/EN translation key-value pairs
+3. **tokens.ts** — Design tokens (colors, typography, spacing, shadows, motion)
+4. **README.md** (this file)
 
-## Screens / Views
+## Reference Files (DC HTML)
 
-### 1. Portfolio Feira (Landing)
-Entrada do portfolio exibindo 5 projetos como caixas de feira. Grid layout com 2 cases ativos (Naches, Noticiato) e 3 placeholders.
+- Portfolio Amanda.dc.html (home page)
+- Case Naches.dc.html (case study 1)
+- Case Noticiato.dc.html (case study 2)
+- Identidade Visual.dc.html (brand system)
 
-**Components**:
-- Hero: titulo grande + 2 chips de contato
-- Cards de projeto: 340px largura, border-radius 26px, background #FFFBF0, sombra 0 3px 0 rgba(44,33,24,.13)
-- Rodape: centralizado, copyright em 13.5px
+## Quick Start
 
-**Interactions**:
-- Cliques nas caixas navegam para cases ou placeholders
-- Chave de idioma PT/EN no topo, persiste em localStorage
+1. Read **IMPLEMENTATION_GUIDE.md** for architecture overview
+2. Import **tokens.ts** and **translations.ts** into your project
+3. Build components in this order:
+   - RocketScroll (hardest, most rewarding)
+   - MacbookFrame + IPhoneFrame (device mockups)
+   - LanguageToggle (localStorage state)
+   - ProjectCard grid
+   - Case study pages
+4. Copy ./assets/ to your public folder
+5. Link Google Fonts in <head> (see tokens.ts)
 
----
+## Key Files to Reference
 
-### 2. Case Naches
-Detalhe do projeto Naches (app escolar com gamificacao).
+- **Portfolio Amanda.dc.html** — Landing page layout, rocket scroll stations, project grid
+- **Case Naches.dc.html** — MacBook mockup with tab switching, device lineup, full-bleed closing
+- **Case Noticiato.dc.html** — Carousel mechanics (planos), research stack, wireframe scroll
+- **Identidade Visual.dc.html** — Brand identity reference (not a case study page, but inspiration for visual system)
 
-**Key Sections**:
-- Hero com badge caso e descricao
-- Desafio e Abordagem em 4 cards
-- MacBook com 2 screenshots intercamaveis (abas missoes/quizzes), rotacao auto a cada 4.6s
-- 3 phones lado a lado: login QR, video app rodando, App Store
-- Dark block Onde Chegou
-- Fecho azul full-bleed com marca respirando
+## Critical Details
 
-**Interactions**:
-- MacBook: clique na aba ou no aparelho alterna, pausa ao hover
-- Video: toque pausa/resume
-- Idioma PT/EN persiste
+- **Colors**: Exact hex + rgba values in tokens.ts (no variations)
+- **Typography**: Baloo 2 for display, DM Sans for body (load both weights)
+- **Spacing**: Use clamp() for fluid responsive sizing
+- **Motion**: Cubic-bezier(.22,1,.36,1) for easing, 0.6-0.7s duration
+- **Rocket scroll**: RAF loop, docking detection, flame response to speed
+- **Language toggle**: localStorage key 'feira-idioma', text-node walk (no innerHTML)
 
----
+## Responsive Breakpoints
 
-### 3. Case Noticiato
-Detalhe do projeto Noticiato (rede de jornalistas verificados).
+- Container max-width: 1080px
+- Padding: clamp(20px, 5vw, 64px)
+- Grid: repeat(auto-fit, minmax(300px, 1fr))
+- Font scaling: clamp(min, preferred_vw, max)
 
-**Key Sections**:
-- Pesquisa: pilha de 3 paginas com rotacao leve, auto-ciclo 4.6s
-- Desktop + Celular: abas intercamaveis, MacBook + iPhone lado a lado
-- Planos em Desfile: faixa amarela, 4 cards em loop 38s
-- Wireframe: auto-scroll 30s alternando sobe/desce
-- Abordagem em 4 cards
-- Porta do Jornalista com painel screenshot
-- Fecho amarelo full-bleed
+## Assets to Copy
 
-**Interactions**:
-- Planos desfilam com hover pausa
-- Abas desktop/mobile: clique muda foco
-- Pilha pesquisa: clique folheia
-- Wireframe: hover pausa
-- Idioma PT/EN persiste
-
----
-
-## Design Tokens
-
-### Colors
-- Background: #FBF3E0 (creme)
-- Text: #2C2118 (marrom), rgba(44,33,24,.5-.78) (cinza)
-- Accents: #E04B33 (coral), #7A4A8C (roxo), #4C8C3F (verde), #F2B32C (amarelo), #027BE8 (azul)
-- Dark: #2C2118, #1B1512
-- Light: #FFFBF0, #F4EBD9
-
-### Typography
-- Titles: Baloo 2 800, clamp(28px, 3.4vw, 52px), letter-spacing -0.03em
-- Body: DM Sans 400-500, 16-18px, line-height 1.55-1.65
-- Labels: Baloo 2 700, 14-16px
-
-### Spacing
-- Container: 28px padding
-- Sections: 44-76px gap
-- Cards: 26-30px padding
-- Radius: 999px (pills), 26px (cards), 22px (images)
-
-### Shadows
-- Cards: 0 3px 0 rgba(44,33,24,.13)
-- Emphasis: 0 5px 0 rgba(44,33,24,.2)
-- MacBook: 0 22px 44px rgba(44,33,24,.28)
-
-### Motion
-- Duration: 0.6-0.7s, easing cubic-bezier(.22,1,.36,1)
-- Auto-cycles: 4.6-7s linear ou ease-in-out
+From project root ./assets/:
+- naches-gestor.png
+- naches-missoes.png
+- naches-quizzes.png
+- naches-login.png
+- naches-app.mp4
+- naches-appstore.png
+- naches-logo-final.png
+- (Noticiato images follow similar naming)
 
 ---
 
-## Assets
-- Portfolio Feira.dc.html
-- Case Naches.dc.html
-- Case Noticiato.dc.html
-- assets/ (images e video)
-
----
-
-## Responsive Behavior
-Max-width 1080px, padding 28px, clamp() para scaling fluido, overflow-x clip para MacBooks.
+Made with Amanda's portfolio. Do not copy HTML directly — recreate in your framework.
