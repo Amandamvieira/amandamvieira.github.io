@@ -1,4 +1,4 @@
-# Handoff: Portfolio Amanda - Feira Tematica
+# Portifolio amanda 
 
 ## Overview
 Portfolio visual de design completo com historico de projetos (Naches e Noticiato), case studies interativos e identidade baseada em ilustracao feita a mao. O design e tematico (feira de rua) com tipografia ludica (Baloo 2) e paleta quente.
