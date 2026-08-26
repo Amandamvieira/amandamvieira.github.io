@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #FBF3E0; color: #2C2118; font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #E04B33; text-decoration: none; }
+    a:hover { color: #7A4A8C; }
+    ::selection { background: #F2B32C; color: #2C2118; }
+    @keyframes respiraLogo { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-7px) scale(1.035); } }
+    @keyframes flutuaFoneEsq { 0%, 100% { transform: rotate(-3.5deg) translateY(0); } 50% { transform: rotate(-3.5deg) translateY(-11px); } }
+    @keyframes flutuaFoneDir { 0%, 100% { transform: rotate(3.5deg) translateY(0); } 50% { transform: rotate(3.5deg) translateY(-11px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</helmet>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 26px 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+  <a href="Portfolio%20Feira.dc.html" style="display: inline-flex; align-items: center; gap: 9px; padding: 10px 18px 10px 14px; border-radius: 999px; background: #FFFBF0; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; box-shadow: 0 3px 0 rgba(44,33,24,.13);" style-hover="color: #2C2118; transform: translateY(-2px);">
+    <svg viewBox="0 0 24 24" width="17" height="17"><path d="M20 12H7l5 5-1.6 1.6L2.8 12l7.6-6.6L12 7l-5 5h13z" fill="#E04B33"></path></svg>
+    voltar pra feira
+  </a>
+  <div style="display: flex; align-items: center; gap: 2px; padding: 3px; border-radius: 999px; background: rgba(44,33,24,.07);">
+    <button type="button" data-idioma="pt" style="border: 0; padding: 7px 13px; border-radius: 999px; background: #FFFBF0; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 14px; color: #2C2118; cursor: pointer;">PT</button>
+    <button type="button" data-idioma="en" style="border: 0; padding: 7px 13px; border-radius: 999px; background: none; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 14px; color: rgba(44,33,24,.55); cursor: pointer;">EN</button>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 54px 28px 0;">
+  <div style="display: inline-flex; align-items: center; gap: 9px; padding: 7px 15px; border-radius: 999px; background: rgba(224,75,51,.13); color: #B8402A; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 14.5px;">
+    <span style="width: 9px; height: 9px; border-radius: 50%; background: #E04B33;"></span>
+    case · edtech
+  </div>
+  <h1 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(38px, 6vw, 74px); line-height: 1.02; letter-spacing: -.03em; margin: 22px 0 20px; max-width: 15ch; text-wrap: pretty;">Naches: a escola inteira jogando o mesmo jogo</h1>
+  <p style="margin: 0; max-width: 46ch; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: rgba(44,33,24,.66);">Missão no celular do estudante, pulso da turma no painel da escola: a mesma lógica dos dois lados.</p>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 44px 28px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">Visão geral</div>
+    <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16.5px; line-height: 1.5;">
+      <div><span style="color: rgba(44,33,24,.5);">produto:</span> plataforma de engajamento da comunidade escolar</div>
+      <div><span style="color: rgba(44,33,24,.5);">meu papel:</span> product design: pesquisa, telas e testes</div>
+      <div><span style="color: rgba(44,33,24,.5);">superfícies:</span> app do estudante e painel web da escola</div>
+      <div><span style="color: rgba(44,33,24,.5);">no ar:</span> <a href="https://naches.app/" target="_blank" rel="noopener">naches.app ↗</a></div>
+    </div>
+  </div>
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">O que eu trabalhei</div>
+    <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16.5px; line-height: 1.45;">
+      <div style="display: flex; gap: 10px;"><span style="color: #E04B33;">✳</span> pesquisa com estudantes, educadores e coordenação</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #E04B33;">✳</span> app do estudante: missões, progresso e recompensas</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #E04B33;">✳</span> painel da escola: pulso da turma, campanhas e clima</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #E04B33;">✳</span> testes na CRenglish, em Valença (RJ)</div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 26px 28px 0;">
+  <div style="border-radius: 30px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <img src="assets/naches-gestor.png" alt="Painel do gestor Naches com o app do estudante na frente" style="display: block; width: 100%; height: auto;">
+  </div>
+  <div style="margin-top: 12px; font-size: 14.5px; color: rgba(44,33,24,.5);">painel do gestor e app do estudante, lado a lado</div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 24px;">O desafio</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; max-width: 900px;">
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">A dor de uma escola não é só da gestão. O educador sustenta a turma e quase ninguém vê; o estudante vive a escola e em casa responde "normal"; a família só descobre o ano no boletim.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">Então a pergunta não era "como gamificar". Era: como fazer o esforço aparecer para quem importa, sem virar vigilância nem competição tóxica?</p>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 66px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 28px;">A abordagem</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(224,75,51,.16); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #B8402A; margin-bottom: 14px;">01</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Uma lógica, dois lados</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">O que a escola cria como campanha chega no celular como missão. Mesmo vocabulário, mesma unidade de progresso.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(242,179,44,.28); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #8A6410; margin-bottom: 14px;">02</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Próximo passo sempre claro</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Na home do estudante: o que fazer agora, quanto falta e o que ele ganha. Nada de menu labiríntico.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(76,140,63,.18); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #3E7333; margin-bottom: 14px;">03</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Progresso sem vigilância</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Ranking do esforço, não do desempenho. Sem exposição pública de quem está atrás.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(122,74,140,.18); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #6A3F7C; margin-bottom: 14px;">04</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">A IA sugere, o educador decide</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">A validação de missão vem pré-triada, mas o critério pedagógico continua sendo da escola.</p>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 66px 28px 0; overflow-x: clip;">
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px;">
+    <div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #B8402A;">o painel por dentro</div>
+      <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 0;">Duas telas, uma gramática</h2>
+    </div>
+    <div style="display: flex; gap: 6px; padding: 5px; border-radius: 999px; background: rgba(44,33,24,.08);">
+      <button type="button" data-aba="0" style="border: 0; padding: 10px 18px; border-radius: 999px; background: #FFFBF0; box-shadow: 0 2px 0 rgba(44,33,24,.12); font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 15.5px; color: #2C2118; cursor: pointer;">missões</button>
+      <button type="button" data-aba="1" style="border: 0; padding: 10px 18px; border-radius: 999px; background: none; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 15.5px; color: rgba(44,33,24,.55); cursor: pointer;">quizzes</button>
+    </div>
+  </div>
+
+  <div data-macbook="1" style="max-width: 940px; margin: 0 auto;">
+    <div style="position: relative; padding: 14px 14px 16px; border-radius: 22px; background: linear-gradient(160deg, #4A4038 0%, #2C2118 45%, #1E1611 100%); box-shadow: 0 22px 44px rgba(44,33,24,.28);">
+      <div style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 78px; height: 5px; border-radius: 0 0 6px 6px; background: rgba(251,243,224,.14);"></div>
+      <div style="position: relative; aspect-ratio: 1.2; border-radius: 10px; overflow: hidden; background: #0E5FD8;">
+        <img data-tela="0" src="assets/naches-missoes.png" alt="Lista de missões no painel do gestor, com progresso e recompensas" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; opacity: 1; transform: scale(1); transition: opacity .55s ease, transform .7s cubic-bezier(.22,1,.36,1);">
+        <img data-tela="1" src="assets/naches-quizzes.png" alt="Painel de quizzes com participação e taxa de acerto" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; opacity: 0; transform: scale(1.04); transition: opacity .55s ease, transform .7s cubic-bezier(.22,1,.36,1);">
+        <div style="position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 42%); pointer-events: none;"></div>
+      </div>
+    </div>
+    <div style="position: relative; width: 112%; margin-left: -6%; height: 15px; border-radius: 0 0 14px 14px; background: linear-gradient(180deg, #B8AFA4 0%, #8C8378 60%, #6B6259 100%); clip-path: polygon(1.5% 0, 98.5% 0, 96% 100%, 4% 100%);"></div>
+    <div style="position: relative; width: 112%; margin-left: -6%; margin-top: -15px; height: 15px; display: grid; place-items: start center; pointer-events: none;">
+      <div style="width: 108px; height: 6px; border-radius: 0 0 8px 8px; background: rgba(44,33,24,.28);"></div>
+    </div>
+  </div>
+
+  <div data-legenda="1" style="max-width: 700px; margin: 24px auto 0; text-align: center; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.62);">lista de missões: regra, prazo, progresso da turma e recompensa em XP e moedas</div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 80px 28px 0;">
+  <div style="max-width: 620px; margin-bottom: 34px;">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #3E7333;">no ar de verdade</div>
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 16px;">O app na mão do estudante</h2>
+    <p style="margin: 0; font-size: 17.5px; line-height: 1.6; color: rgba(44,33,24,.72);">O Naches está publicado como app de Educação. Na sala, o aluno entra escaneando o QR Code que a escola projeta: sem e-mail, sem senha esquecida na primeira aula.</p>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: clamp(14px, 2.4vw, 30px); flex-wrap: wrap;">
+    <div style="width: clamp(150px, 18vw, 206px); animation: flutuaFoneEsq 7s ease-in-out infinite;">
+      <div style="position: relative; padding: 7px; border-radius: 28px; background: linear-gradient(150deg, #4A4038 0%, #2C2118 55%, #1E1611 100%); box-shadow: 0 16px 30px rgba(44,33,24,.28);">
+        <div style="position: relative; aspect-ratio: .462; border-radius: 22px; overflow: hidden; background: #027BE8;">
+          <img src="assets/naches-login.png" alt="Tela de entrada do Naches com opção de escanear QR Code" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 30%; height: 8px; border-radius: 999px; background: rgba(30,22,17,.5);"></div>
+        </div>
+      </div>
+      <div style="margin-top: 12px; text-align: center; font-size: 14px; color: rgba(44,33,24,.55);">entrar por QR Code</div>
+    </div>
+
+    <div style="width: clamp(196px, 25vw, 274px);">
+      <div style="position: relative; padding: 8px; border-radius: 34px; background: linear-gradient(150deg, #4A4038 0%, #2C2118 55%, #1E1611 100%); box-shadow: 0 22px 40px rgba(44,33,24,.32);">
+        <div style="position: relative; aspect-ratio: .462; border-radius: 27px; overflow: hidden; background: #027BE8;">
+          <video data-video-app="1" src="assets/naches-app.mp4" autoplay loop muted playsinline preload="auto" style="display: block; width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></video>
+          <div style="position: absolute; top: 7px; left: 50%; transform: translateX(-50%); width: 30%; height: 9px; border-radius: 999px; background: rgba(30,22,17,.5); pointer-events: none;"></div>
+        </div>
+      </div>
+      <div data-video-dica="1" style="margin-top: 12px; text-align: center; font-size: 14px; color: rgba(44,33,24,.55);">app rodando de verdade · toque pra pausar</div>
+    </div>
+
+    <div style="width: clamp(150px, 18vw, 206px); animation: flutuaFoneDir 7s ease-in-out infinite; animation-delay: -3.5s;">
+      <div style="position: relative; padding: 7px; border-radius: 28px; background: linear-gradient(150deg, #4A4038 0%, #2C2118 55%, #1E1611 100%); box-shadow: 0 16px 30px rgba(44,33,24,.28);">
+        <div style="position: relative; aspect-ratio: .462; border-radius: 22px; overflow: hidden; background: #F2F2F2;">
+          <img src="assets/naches-appstore.png" alt="Página do Naches na loja de aplicativos, com nota 5,0, categoria Educação e versão 1.5.12" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0;">
+          <div style="position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 30%; height: 8px; border-radius: 999px; background: rgba(30,22,17,.5);"></div>
+        </div>
+      </div>
+      <div style="margin-top: 12px; text-align: center; font-size: 14px; color: rgba(44,33,24,.55);">publicado na loja</div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+    <span style="padding: 9px 16px; border-radius: 999px; background: #FFFBF0; box-shadow: 0 2px 0 rgba(44,33,24,.12); font-size: 14.5px;">nota 5,0 de 5</span>
+    <span style="padding: 9px 16px; border-radius: 999px; background: #FFFBF0; box-shadow: 0 2px 0 rgba(44,33,24,.12); font-size: 14.5px;">categoria Educação</span>
+    <span style="padding: 9px 16px; border-radius: 999px; background: #FFFBF0; box-shadow: 0 2px 0 rgba(44,33,24,.12); font-size: 14.5px;">versão 1.5.12, atualizada há 3 dias</span>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="background: #2C2118; border-radius: 30px; padding: 44px 40px; color: #FBF3E0;">
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.06; margin: 0 0 18px; color: #FBF3E0;">Onde chegou</h2>
+    <p style="margin: 0 0 26px; max-width: 52ch; font-size: 18px; line-height: 1.6; color: rgba(251,243,224,.78);">O Naches saiu do estudo e virou produto: rodou piloto em turma real, foi testado com alunos e gestores e hoje é vendido para escolas.</p>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">piloto em turma real</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">testes com alunos e gestores</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">produto no mercado</span>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 76px; padding: 74px 24px 78px; background: #027BE8; display: grid; place-items: center;">
+  <a href="https://naches.app/" target="_blank" rel="noopener" style="display: block; width: clamp(210px, 26vw, 320px); animation: respiraLogo 6.5s ease-in-out infinite;">
+    <img src="assets/naches-logo-final.png" alt="Marca do Naches" style="display: block; width: 100%; height: auto;">
+  </a>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 40px 28px 90px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+  <a href="Portfolio%20Feira.dc.html" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 17px;">← voltar pra feira</a>
+  <a href="Case%20Noticiato.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #F2B32C; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 18px; box-shadow: 0 5px 0 #D19A1F;" style-hover="transform: translateY(3px); box-shadow: 0 2px 0 #D19A1F; color: #2C2118;">próximo case: Noticiato →</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  idioma = 'pt';
+  traducoes = {
+    "voltar pra feira": "back to the market",
+    "case · edtech": "case · edtech",
+    "Naches: a escola inteira jogando o mesmo jogo": "Naches: the whole school playing the same game",
+    "Missão no celular do estudante, pulso da turma no painel da escola: a mesma lógica dos dois lados.": "A mission on the student's phone, the class pulse on the school's dashboard: one logic on both sides.",
+    "Visão geral": "Project overview",
+    "produto:": "product:",
+    "plataforma de engajamento da comunidade escolar": "engagement platform for the school community",
+    "meu papel:": "my role:",
+    "product design: pesquisa, telas e testes": "product design: research, screens and testing",
+    "superfícies:": "surfaces:",
+    "app do estudante e painel web da escola": "student app and school web dashboard",
+    "no ar:": "live at:",
+    "O que eu trabalhei": "What I worked on",
+    "pesquisa com estudantes, educadores e coordenação": "research with students, teachers and school leaders",
+    "app do estudante: missões, progresso e recompensas": "student app: missions, progress and rewards",
+    "painel da escola: pulso da turma, campanhas e clima": "school dashboard: class pulse, campaigns and climate",
+    "testes na CRenglish, em Valença (RJ)": "testing at CRenglish, in Valença (RJ)",
+    "painel do gestor e app do estudante, lado a lado": "the staff dashboard and the student app, side by side",
+    "O desafio": "The challenge",
+    "A dor de uma escola não é só da gestão. O educador sustenta a turma e quase ninguém vê; o estudante vive a escola e em casa responde \"normal\"; a família só descobre o ano no boletim.": "A school's pain is not only the leadership's. The teacher holds the class together and almost nobody sees it; the student lives the school and at home answers \"fine\"; the family only finds out about the year on the report card.",
+    "Então a pergunta não era \"como gamificar\". Era: como fazer o esforço aparecer para quem importa, sem virar vigilância nem competição tóxica?": "So the question was never \"how do we gamify this\". It was: how do we make effort visible to the people who matter, without turning it into surveillance or toxic competition?",
+    "A abordagem": "The approach",
+    "Uma lógica, dois lados": "One logic, two sides",
+    "O que a escola cria como campanha chega no celular como missão. Mesmo vocabulário, mesma unidade de progresso.": "What the school creates as a campaign lands on the phone as a mission. Same vocabulary, same unit of progress.",
+    "Próximo passo sempre claro": "The next step is always clear",
+    "Na home do estudante: o que fazer agora, quanto falta e o que ele ganha. Nada de menu labiríntico.": "On the student's home: what to do now, how much is left and what they get. No maze of menus.",
+    "Progresso sem vigilância": "Progress without surveillance",
+    "Ranking do esforço, não do desempenho. Sem exposição pública de quem está atrás.": "A ranking of effort, not performance. Nobody gets publicly exposed for falling behind.",
+    "A IA sugere, o educador decide": "AI suggests, the teacher decides",
+    "A validação de missão vem pré-triada, mas o critério pedagógico continua sendo da escola.": "Mission approval arrives pre-sorted, but the pedagogical call stays with the school.",
+    "no ar de verdade": "actually shipped",
+    "O app na mão do estudante": "The app in the student's hand",
+    "O Naches está publicado como app de Educação. Na sala, o aluno entra escaneando o QR Code que a escola projeta: sem e-mail, sem senha esquecida na primeira aula.": "Naches is published as an Education app. In the classroom the student gets in by scanning the QR code the school projects: no email, no password forgotten in the first lesson.",
+    "entrar por QR Code": "sign in by QR code",
+    "app rodando de verdade · toque pra pausar": "the real app running · tap to pause",
+    "publicado na loja": "live on the app store",
+    "nota 5,0 de 5": "rated 5.0 out of 5",
+    "categoria Educação": "Education category",
+    "versão 1.5.12, atualizada há 3 dias": "version 1.5.12, updated 3 days ago",
+    "Onde chegou": "Where it landed",
+    "O Naches saiu do estudo e virou produto: rodou piloto em turma real, foi testado com alunos e gestores e hoje é vendido para escolas.": "Naches went from study to product: it ran a pilot with a real class, was tested with students and school leaders, and today it is sold to schools.",
+    "piloto em turma real": "pilot with a real class",
+    "testes com alunos e gestores": "tested with students and staff",
+    "produto no mercado": "shipped product",
+    "← voltar pra feira": "← back to the market",
+    "próximo case: Noticiato →": "next case: Noticiato →",
+    "o painel por dentro": "inside the dashboard",
+    "Duas telas, uma gramática": "Two screens, one grammar",
+    "missões": "missions",
+    "quizzes": "quizzes",
+    "lista de missões: regra, prazo, progresso da turma e recompensa em XP e moedas": "mission list: rule, deadline, class progress and reward in XP and coins",
+    "quizzes: participação, taxa de acerto e rascunhos convivendo na mesma lista": "quizzes: participation, accuracy rate and drafts living in one list"
+  };
+
+  legendas = [
+    'lista de missões: regra, prazo, progresso da turma e recompensa em XP e moedas',
+    'quizzes: participação, taxa de acerto e rascunhos convivendo na mesma lista'
+  ];
+
+  mostrarTela(i) {
+    this.aba = i;
+    document.querySelectorAll('[data-tela]').forEach(img => {
+      const ativo = Number(img.dataset.tela) === i;
+      img.style.opacity = ativo ? '1' : '0';
+      img.style.transform = ativo ? 'scale(1)' : 'scale(1.04)';
+    });
+    document.querySelectorAll('[data-aba]').forEach(b => {
+      const ativo = Number(b.dataset.aba) === i;
+      b.style.background = ativo ? '#FFFBF0' : 'none';
+      b.style.boxShadow = ativo ? '0 2px 0 rgba(44,33,24,.12)' : 'none';
+      b.style.color = ativo ? '#2C2118' : 'rgba(44,33,24,.55)';
+      b.setAttribute('aria-pressed', ativo ? 'true' : 'false');
+    });
+    const legenda = document.querySelector('[data-legenda]');
+    if (legenda) {
+      const texto = this.legendas[i];
+      legenda.style.opacity = '0';
+      setTimeout(() => {
+        legenda.textContent = this.idioma === 'en' ? (this.traducoes[texto] || texto) : texto;
+        legenda.style.opacity = '1';
+      }, 200);
+    }
+  }
+
+  ligarVideo() {
+    const v = document.querySelector('[data-video-app]');
+    if (!v) return;
+    v.muted = true;
+    v.playsInline = true;
+    v.play().catch(() => {});
+    const dica = document.querySelector('[data-video-dica]');
+    v.addEventListener('click', () => {
+      if (v.paused) { v.play().catch(() => {}); } else { v.pause(); }
+      if (dica) {
+        const pausado = v.paused;
+        dica.textContent = this.idioma === 'en'
+          ? (pausado ? 'paused · tap to play' : 'the real app running · tap to pause')
+          : (pausado ? 'pausado · toque pra continuar' : 'app rodando de verdade · toque pra pausar');
+      }
+    });
+  }
+
+  ligarMacbook() {
+    const legenda = document.querySelector('[data-legenda]');
+    if (legenda) legenda.style.transition = 'opacity .25s ease';
+    document.querySelectorAll('[data-aba]').forEach(b => {
+      b.addEventListener('click', () => {
+        this.pausado = true;
+        this.mostrarTela(Number(b.dataset.aba));
+      });
+    });
+    const palco = document.querySelector('[data-macbook]');
+    if (palco) {
+      palco.style.cursor = 'pointer';
+      palco.addEventListener('click', () => {
+        this.pausado = true;
+        this.mostrarTela(this.aba === 0 ? 1 : 0);
+      });
+    }
+    this.aba = 0;
+    this.timer = setInterval(() => {
+      if (this.pausado) return;
+      this.mostrarTela(this.aba === 0 ? 1 : 0);
+    }, 4600);
+  }
+
+  componentWillUnmount() {
+    if (this.timer) clearInterval(this.timer);
+  }
+
+  aplicarIdioma(para, inicial) {
+    if (para !== this.idioma) {
+      const mapa = para === 'en'
+        ? this.traducoes
+        : Object.fromEntries(Object.entries(this.traducoes).map(([k, v]) => [v, k]));
+      const passo = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      const nos = [];
+      while (passo.nextNode()) nos.push(passo.currentNode);
+      nos.forEach(n => {
+        const bruto = n.nodeValue;
+        const chave = bruto.replace(/\s+/g, ' ').trim();
+        if (!chave || !mapa[chave]) return;
+        n.nodeValue = bruto.match(/^\s*/)[0] + mapa[chave] + bruto.match(/\s*$/)[0];
+      });
+      this.idioma = para;
+    }
+    if (!inicial) { try { localStorage.setItem('feira-idioma', para); } catch (e) {} }
+    document.querySelectorAll('[data-idioma]').forEach(b => {
+      const ativo = b.dataset.idioma === para;
+      b.style.background = ativo ? '#FFFBF0' : 'none';
+      b.style.color = ativo ? '#2C2118' : 'rgba(44,33,24,.55)';
+      b.style.boxShadow = ativo ? '0 1px 0 rgba(44,33,24,.12)' : 'none';
+      b.setAttribute('aria-pressed', ativo ? 'true' : 'false');
+    });
+  }
+
+  componentDidMount() {
+    document.querySelectorAll('[data-idioma]').forEach(b => {
+      b.addEventListener('click', () => this.aplicarIdioma(b.dataset.idioma));
+    });
+    let salvo = null;
+    try { salvo = localStorage.getItem('feira-idioma'); } catch (e) {}
+    this.aplicarIdioma(salvo === 'en' ? 'en' : 'pt', true);
+    this.ligarMacbook();
+    this.ligarVideo();
+  }
+}
+</script>
+</body>
+</html>
