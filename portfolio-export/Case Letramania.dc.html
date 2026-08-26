@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #FBF3E0; color: #2C2118; font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #E04B33; text-decoration: none; }
+    a:hover { color: #7A4A8C; }
+    ::selection { background: #F2B32C; color: #2C2118; }
+    @keyframes respiraLogo { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-7px) scale(1.035); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</helmet>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 26px 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+  <a href="index.html" style="display: inline-flex; align-items: center; gap: 9px; padding: 10px 18px 10px 14px; border-radius: 999px; background: #FFFBF0; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; box-shadow: 0 3px 0 rgba(44,33,24,.13);" style-hover="color: #2C2118; transform: translateY(-2px);">
+    <svg viewBox="0 0 24 24" width="17" height="17"><path d="M20 12H7l5 5-1.6 1.6L2.8 12l7.6-6.6L12 7l-5 5h13z" fill="#E04B33"></path></svg>
+    voltar pra feira
+  </a>
+  <a href="#prototipo" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px;">testar o protótipo ↓</a>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 54px 28px 0;">
+  <div style="display: inline-flex; align-items: center; gap: 9px; padding: 7px 15px; border-radius: 999px; background: rgba(242,179,44,.24); color: #8A6410; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 14.5px;">
+    <span style="width: 9px; height: 9px; border-radius: 50%; background: #F2B32C;"></span>
+    case · TCC · game design
+  </div>
+  <h1 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(38px, 6vw, 74px); line-height: 1.02; letter-spacing: -.03em; margin: 22px 0 20px; max-width: 17ch; text-wrap: pretty;">Letramania: um jogo que ajuda o psicólogo a enxergar</h1>
+  <p style="margin: 0; max-width: 50ch; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: rgba(44,33,24,.66);">Redesign completo de um jogo de apoio ao diagnóstico de autismo na primeira infância. Meu trabalho de conclusão de curso.</p>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 40px 28px 0;">
+  <div style="border-radius: 30px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <img src="assets/letramania-menu.png" alt="Menu inicial do Letramania: letras coloridas, botões iniciar e sair, e o mascote Ollie" style="display: block; width: 100%; height: auto;">
+  </div>
+  <div style="margin-top: 12px; font-size: 14.5px; color: rgba(44,33,24,.5);">menu inicial redesenhado, com o Ollie apresentando o jogo à criança</div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 44px 28px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">Visão geral</div>
+    <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16.5px; line-height: 1.5;">
+      <div><span style="color: rgba(44,33,24,.5);">projeto:</span> trabalho de conclusão de curso</div>
+      <div><span style="color: rgba(44,33,24,.5);">produto:</span> jogo de apoio ao diagnóstico de autismo em primeira infância</div>
+      <div><span style="color: rgba(44,33,24,.5);">quem usa:</span> a criança joga, o psicólogo observa</div>
+      <div><span style="color: rgba(44,33,24,.5);">meu papel:</span> redesign completo e desenvolvimento em Godot</div>
+      <div><span style="color: rgba(44,33,24,.5);">status:</span> em teste com crianças em terapia</div>
+    </div>
+  </div>
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">O que eu trabalhei</div>
+    <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16.5px; line-height: 1.45;">
+      <div style="display: flex; gap: 10px;"><span style="color: #F2B32C;">✳</span> refiz toda a interface do jogo, tela por tela</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #F2B32C;">✳</span> criei o Ollie, mascote que guia a criança sem ler texto</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #F2B32C;">✳</span> alvos grandes, cor forte e som opcional para primeira infância</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #F2B32C;">✳</span> protótipo navegável no Figma, testado antes do código</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #F2B32C;">✳</span> desenvolvi o jogo em Godot e levei para sessões reais</div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="max-width: 620px; margin-bottom: 28px;">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #6A3F7C;">o ponto de partida</div>
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 16px;">Como o jogo era antes</h2>
+    <p style="margin: 0; font-size: 17.5px; line-height: 1.6; color: rgba(44,33,24,.72);">Fundo em degradê saturado, tipografia de sistema, quatro palavras simultâneas com um teclado de 30 letras e um painel de ajustes escrito para adulto. Nada disso conversa com uma criança de primeira infância.</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    <div>
+      <div style="border-radius: 18px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+        <img src="assets/letramania-antes-menu.png" alt="Menu original do Letramania, em roxo, com campo de id do paciente" style="display: block; width: 100%; height: auto;">
+      </div>
+      <div style="margin-top: 10px; font-size: 14.5px; line-height: 1.5; color: rgba(44,33,24,.55);">menu: a primeira tela pedia o id do paciente, não convidava a criança</div>
+    </div>
+    <div>
+      <div style="border-radius: 18px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+        <img src="assets/letramania-antes-jogo.png" alt="Tela de jogo original, com quatro palavras e um teclado de 30 letras" style="display: block; width: 100%; height: auto;">
+      </div>
+      <div style="margin-top: 10px; font-size: 14.5px; line-height: 1.5; color: rgba(44,33,24,.55);">partida: quatro palavras ao mesmo tempo e 30 letras soltas para escolher</div>
+    </div>
+    <div>
+      <div style="border-radius: 18px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+        <img src="assets/letramania-antes-config.png" alt="Painel de configuração original, com tema, tempo de dica, vidas, pontuação e temporizador" style="display: block; width: 100%; height: auto;">
+      </div>
+      <div style="margin-top: 10px; font-size: 14.5px; line-height: 1.5; color: rgba(44,33,24,.55);">ajustes: controles do terapeuta na mesma tela em que a criança joga</div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 24px;">O desafio</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; max-width: 900px;">
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">O jogo já existia, mas tinha sido desenhado sem pensar em quem joga. Criança de primeira infância não lê instrução, não entende ícone abstrato e desiste quando o alvo é pequeno demais para o dedo.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">E existe um segundo usuário invisível: o psicólogo. Ele precisa que a criança se envolva de verdade, porque o comportamento dela dentro do jogo é o dado clínico. Interface confusa contamina o diagnóstico.</p>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 66px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 28px;">A abordagem</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(242,179,44,.28); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #8A6410; margin-bottom: 14px;">01</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Um guia, não um manual</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">O Ollie fala o que fazer em uma frase curta. A criança nunca precisa ler para saber o próximo passo.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(224,75,51,.16); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #B8402A; margin-bottom: 14px;">02</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Alvo do tamanho do dedo</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Botões e letras viraram blocos grandes, com sombra sólida que mostra onde tocar. Erro de toque deixa de ser dado ruim.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(76,140,63,.18); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #3E7333; margin-bottom: 14px;">03</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Estímulo sob controle</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Som e animação têm botão de desligar na primeira tela. Sensibilidade sensorial não pode ser obstáculo à sessão.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(122,74,140,.18); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #6A3F7C; margin-bottom: 14px;">04</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Sem punição visível</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Nada de vermelho de erro nem som de fracasso. O jogo registra, mas devolve incentivo — quem lê o resultado é o profissional.</p>
+    </div>
+  </div>
+</div>
+
+<div id="prototipo" style="max-width: 1080px; margin: 0 auto; padding: 80px 28px 0;">
+  <div style="max-width: 620px; margin-bottom: 30px;">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #B8402A;">na sua mão</div>
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 16px;">Protótipo interativo</h2>
+    <p style="margin: 0; font-size: 17.5px; line-height: 1.6; color: rgba(44,33,24,.72);">O protótipo navegável do Figma roda aqui dentro do tablet. Toque nos botões como a criança tocaria, sem sair da página.</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+    <div style="position: relative; aspect-ratio: 1.6; border-radius: 20px; overflow: hidden; background: #F4EBD9; box-shadow: 0 3px 0 rgba(44,33,24,.13); border: 1px solid rgba(44,33,24,.1);">
+      <iframe src="https://embed.figma.com/proto/pW94cFyIO9N7cwt6BSFui5/Letramania?team_id=1102752006329468762&amp;node-id=185-260&amp;page-id=0%3A1&amp;starting-point-node-id=185%3A260&amp;embed-host=share" title="Protótipo interativo do Letramania no Figma" allowfullscreen="allowfullscreen" style="display: block; width: 100%; height: 100%; border: 0;"></iframe>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-top: 16px;">
+      <span style="font-size: 14.5px; color: rgba(44,33,24,.5);">protótipo do Figma rodando de verdade · toque para navegar</span>
+      <a href="https://www.figma.com/proto/pW94cFyIO9N7cwt6BSFui5/Letramania?node-id=185-260&amp;starting-point-node-id=185%3A260" target="_blank" rel="noopener" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 15.5px;">abrir em tela cheia ↗</a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 80px 28px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 16px;">Base teórica</div>
+    <p style="margin: 0 0 18px; font-size: 16.5px; line-height: 1.6; color: rgba(44,33,24,.75);">Cada decisão de tela seguiu diretrizes de design de interface para crianças de primeira infância: alvo grande, feedback imediato, uma tarefa por vez, ícone concreto no lugar de texto e estímulo sensorial sob controle do terapeuta.</p>
+    <div style="display: flex; gap: 9px; flex-wrap: wrap;">
+      <span style="padding: 7px 14px; border-radius: 999px; background: rgba(44,33,24,.07); font-size: 14px;">uma tarefa por tela</span>
+      <span style="padding: 7px 14px; border-radius: 999px; background: rgba(44,33,24,.07); font-size: 14px;">ícone concreto</span>
+      <span style="padding: 7px 14px; border-radius: 999px; background: rgba(44,33,24,.07); font-size: 14px;">estímulo ajustável</span>
+    </div>
+  </div>
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13); display: flex; flex-direction: column; gap: 16px;">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px;">A monografia</div>
+    <p style="margin: 0; font-size: 16.5px; line-height: 1.6; color: rgba(44,33,24,.75);">Revisão das diretrizes, processo de redesign e desenvolvimento em Godot, tudo escrito no trabalho de conclusão de curso.</p>
+    <a href="assets/letramania-monografia.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; margin-top: auto; padding: 13px 22px; border-radius: 999px; background: #F2B32C; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; box-shadow: 0 4px 0 #D19A1F;" style-hover="transform: translateY(2px); box-shadow: 0 2px 0 #D19A1F; color: #2C2118;">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3v10.6l3.3-3.3L16.7 12 12 16.7 7.3 12l1.4-1.7 3.3 3.3V3zM5 19h14v2H5z" fill="#2C2118"></path></svg>
+      ler a monografia (PDF)
+    </a>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="background: #2C2118; border-radius: 30px; padding: 44px 40px; color: #FBF3E0;">
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.06; margin: 0 0 18px; color: #FBF3E0;">Onde chegou</h2>
+    <p style="margin: 0 0 26px; max-width: 56ch; font-size: 18px; line-height: 1.6; color: rgba(251,243,224,.78);">O Letramania não parou no protótipo: eu mesma desenvolvi o jogo em Godot e hoje ele está em teste com crianças em terapia, junto de psicólogos que acompanham cada sessão.</p>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">desenhado e programado por mim</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">desenvolvido em Godot</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">em teste com crianças em terapia</span>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 60px 28px 90px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+  <a href="index.html" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 17px;">← voltar pra feira</a>
+  <a href="Case Naches.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #F2B32C; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 18px; box-shadow: 0 5px 0 #D19A1F;" style-hover="transform: translateY(3px); box-shadow: 0 2px 0 #D19A1F; color: #2C2118;">próximo case: Naches →</a>
+</div>
+</x-dc>
+</body>
+</html>
