@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #FBF3E0; color: #2C2118; font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #B4651F; text-decoration: none; }
+    a:hover { color: #E04B33; }
+    ::selection { background: #F2B32C; color: #2C2118; }
+    @keyframes respiraLogo { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-7px) scale(1.035); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</helmet>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 26px 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+  <a href="index.html" style="display: inline-flex; align-items: center; gap: 9px; padding: 10px 18px 10px 14px; border-radius: 999px; background: #FFFBF0; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; box-shadow: 0 3px 0 rgba(44,33,24,.13);" style-hover="color: #2C2118; transform: translateY(-2px);">
+    <svg viewBox="0 0 24 24" width="17" height="17"><path d="M20 12H7l5 5-1.6 1.6L2.8 12l7.6-6.6L12 7l-5 5h13z" fill="#B4651F"></path></svg>
+    voltar pra feira
+  </a>
+  <a href="https://calculadora.rfai.pt/" target="_blank" rel="noopener" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px;">calculadora.rfai.pt ↗</a>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 54px 28px 0;">
+  <div style="display: inline-flex; align-items: center; gap: 9px; padding: 7px 15px; border-radius: 999px; background: rgba(238,139,60,.18); color: #B4651F; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 14.5px;">
+    <span style="width: 9px; height: 9px; border-radius: 50%; background: #EE8B3C;"></span>
+    case · produto no ar
+  </div>
+  <h1 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(38px, 6vw, 74px); line-height: 1.02; letter-spacing: -.03em; margin: 22px 0 20px; max-width: 18ch; text-wrap: pretty;">RFAI: usar incentivo fiscal para crescer</h1>
+  <p style="margin: 0; max-width: 52ch; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: rgba(44,33,24,.66);">A primeira calculadora automática do RFAI em Portugal. Ela mostra, antes do investimento acontecer, quanto a empresa recupera em imposto ao expandir.</p>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 40px 28px 0;">
+  <div style="border-radius: 26px; overflow: hidden; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <img src="assets/rfai-chatbot-laptop.png" alt="A calculadora RFAI aberta num portátil, mostrando o chatbot Grö a fazer as perguntas de elegibilidade" style="display: block; width: 100%; height: auto;">
+  </div>
+  <div style="margin-top: 12px; font-size: 14.5px; color: rgba(44,33,24,.5);">o chatbot conduz o levantamento: em vez de formulário longo, uma conversa com respostas sim ou não</div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 60px 28px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">Visão geral</div>
+    <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16.5px; line-height: 1.5;">
+      <div><span style="color: rgba(44,33,24,.5);">produto:</span> Calculadora Automática RFAI</div>
+      <div><span style="color: rgba(44,33,24,.5);">meu papel:</span> product designer: pesquisa de UX, fluxo e UI, do zero à entrega</div>
+      <div><span style="color: rgba(44,33,24,.5);">mercado:</span> empresas em expansão em Portugal</div>
+      <div><span style="color: rgba(44,33,24,.5);">superfície:</span> web app: onboarding, chatbot e dashboard</div>
+      <div><span style="color: rgba(44,33,24,.5);">status:</span> no ar em calculadora.rfai.pt, produto à venda</div>
+    </div>
+  </div>
+  <div style="background: #FFFBF0; border-radius: 26px; padding: 30px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 25px; margin-bottom: 18px;">O que eu fiz</div>
+    <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16.5px; line-height: 1.45;">
+      <div style="display: flex; gap: 10px;"><span style="color: #EE8B3C;">✳</span> entrevistei os profissionais da empresa que pediu a plataforma, os que conhecem a norma fiscal por dentro</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #EE8B3C;">✳</span> conduzi toda a pesquisa de UX: contexto de uso, vocabulário fiscal e o que trava a decisão de investir</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #EE8B3C;">✳</span> desenhei fluxo, chatbot de elegibilidade e dashboard na mesma lógica</div>
+      <div style="display: flex; gap: 10px;"><span style="color: #EE8B3C;">✳</span> entreguei o produto que hoje está no ar e é vendido</div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 24px;">O desafio</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; max-width: 900px;">
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">O RFAI é um benefício que quase todo mundo elegível desconhece. Saber quanto se recupera exige cruzar investimento em ativo fixo tangível, ativo intangível e criação de postos de trabalho qualificado com regras fiscais que mudam por região e por tipologia de projeto.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(44,33,24,.78);">Na prática, isso virava consultoria de semanas e uma folha de cálculo que só o especialista lia. A pergunta do projeto era simples: como um diretor financeiro chega ao número sozinho, em minutos, sem cometer erro de enquadramento.</p>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 66px 28px 0;">
+  <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 28px;">A abordagem</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(238,139,60,.22); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #B4651F; margin-bottom: 14px;">01</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Formulário virou conversa</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">As perguntas de elegibilidade são jurídicas e intimidam. O chatbot faz uma por vez, em linguagem de gente, com sim ou não como resposta.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(242,179,44,.28); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #8A6410; margin-bottom: 14px;">02</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Cadastro em três passos</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">Empresa, informação jurídica e fiscal, localização. A trilha lateral mostra sempre onde a pessoa está e quanto falta.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(76,140,63,.18); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #3E7333; margin-bottom: 14px;">03</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">O número em primeiro plano</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">O dashboard abre com investimento total, investimento elegível e benefício por ano. É o que decide a expansão, então vem antes de tudo.</p>
+    </div>
+    <div style="background: #FFFBF0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 3px 0 rgba(44,33,24,.13);">
+      <div style="width: 38px; height: 38px; border-radius: 13px; background: rgba(224,75,51,.16); display: grid; place-items: center; font-family: 'Baloo 2', cursive; font-weight: 800; color: #B8402A; margin-bottom: 14px;">04</div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 20px; margin-bottom: 8px;">Conformidade sem susto</div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.7);">CAE, tipologia e postos de trabalho ganham validação automática. Se algo sai da norma fiscal, aparece ali, não na auditoria.</p>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px;">
+    <div>
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #B4651F;">por dentro do produto</div>
+      <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 0;">As telas</h2>
+    </div>
+    <div style="display: flex; gap: 6px; padding: 5px; border-radius: 999px; background: rgba(44,33,24,.08);">
+      <button type="button" onClick="{{ verDashboard }}" style="border: 0; padding: 10px 18px; border-radius: 999px; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 15.5px; cursor: pointer; background: {{ pill0Bg }}; box-shadow: {{ pill0Sombra }}; color: {{ pill0Cor }};">dashboard</button>
+      <button type="button" onClick="{{ verCadastro }}" style="border: 0; padding: 10px 18px; border-radius: 999px; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 15.5px; cursor: pointer; background: {{ pill1Bg }}; box-shadow: {{ pill1Sombra }}; color: {{ pill1Cor }};">cadastro</button>
+    </div>
+  </div>
+
+  <div style="max-width: 960px; margin: 0 auto;">
+    <div style="border-radius: 16px; overflow: hidden; background: #FFFBF0; box-shadow: 0 22px 44px rgba(44,33,24,.22), inset 0 0 0 1px rgba(44,33,24,.1);">
+      <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #EFE6D2; border-bottom: 1px solid rgba(44,33,24,.1);">
+        <div style="display: flex; gap: 7px;">
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #E04B33;"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #F2B32C;"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #4C8C3F;"></span>
+        </div>
+        <div style="flex: 1; display: flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: #FFFBF0; font-size: 13.5px; color: rgba(44,33,24,.6); box-shadow: inset 0 0 0 1px rgba(44,33,24,.08);">
+          <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2a7 7 0 0 0-7 7v2H4v11h16V11h-1V9a7 7 0 0 0-7-7zm0 2a5 5 0 0 1 5 5v2H7V9a5 5 0 0 1 5-5z" fill="rgba(44,33,24,.45)"></path></svg>
+          calculadora.rfai.pt
+        </div>
+        <div style="font-size: 12.5px; font-family: 'Baloo 2', cursive; font-weight: 700; color: rgba(44,33,24,.45);">{{ rotuloAba }}</div>
+      </div>
+      <div style="height: clamp(380px, 62vh, 620px); overflow-y: auto; overflow-x: hidden; background: #FFFFFF;">
+        <img src="{{ telaSrc }}" alt="{{ telaAlt }}" style="display: block; width: 100%; height: auto;">
+      </div>
+    </div>
+    <div style="margin-top: 10px; text-align: center; font-size: 13.5px; color: rgba(44,33,24,.45);">a tela inteira, rolável dentro da janela</div>
+  </div>
+
+  <div style="max-width: 720px; margin: 24px auto 0; text-align: center; font-size: 16px; line-height: 1.55; color: rgba(44,33,24,.62);">{{ legenda }}</div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="max-width: 620px; margin-bottom: 30px;">
+    <div style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 16px; color: #3E7333;">o que muda no caixa</div>
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.06; letter-spacing: -.02em; margin: 6px 0 16px;">Resultados de empresas em crescimento</h2>
+    <p style="margin: 0; font-size: 17.5px; line-height: 1.6; color: rgba(44,33,24,.72);">Quem passou a simular antes de investir mudou a conversa: o benefício entra no plano de investimento em vez de aparecer depois, na declaração. Toque na faixa para ver rodando de novo.</p>
+  </div>
+
+  <div data-contadores="1" onClick="{{ rodarContadores }}" style="background: #FFFBF0; border-radius: 26px; padding: 40px 32px; box-shadow: 0 3px 0 rgba(44,33,24,.13); display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 26px; cursor: pointer;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;">
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(40px, 5vw, 58px); line-height: 1; color: {{ acento }};">{{ n1 }}</div>
+      <div style="font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: rgba(44,33,24,.55);">de redução no custo inicial</div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;">
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(40px, 5vw, 58px); line-height: 1; color: {{ acento }};">{{ n2 }}</div>
+      <div style="font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: rgba(44,33,24,.55);">passos até o resultado</div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;">
+      <div style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(40px, 5vw, 58px); line-height: 1; color: {{ acento }};">{{ n3 }}</div>
+      <div style="font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: rgba(44,33,24,.55);">calculadora automática do RFAI em Portugal</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 18px;">
+    <div style="background: rgba(76,140,63,.12); border-radius: 20px; padding: 20px 22px; font-size: 16px; line-height: 1.5; color: rgba(44,33,24,.8);">expansão operacional e tecnológica mais rápida, porque o número chega antes da decisão</div>
+    <div style="background: rgba(242,179,44,.18); border-radius: 20px; padding: 20px 22px; font-size: 16px; line-height: 1.5; color: rgba(44,33,24,.8);">liquidez otimizada: capital que voltava só na declaração já entra no plano de reinvestimento</div>
+    <div style="background: rgba(238,139,60,.16); border-radius: 20px; padding: 20px 22px; font-size: 16px; line-height: 1.5; color: rgba(44,33,24,.8);">menos erro de enquadramento, porque a validação é do sistema e não da memória do consultor</div>
+  </div>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 76px 28px 0;">
+  <div style="background: #2C2118; border-radius: 30px; padding: 44px 40px; color: #FBF3E0;">
+    <h2 style="font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.06; margin: 0 0 18px; color: #FBF3E0;">Onde chegou</h2>
+    <p style="margin: 0 0 26px; max-width: 56ch; font-size: 18px; line-height: 1.6; color: rgba(251,243,224,.78);">A calculadora está no ar e é a primeira automação do RFAI em Portugal. Poupa tempo, elimina erro de cálculo e mostra o benefício com base em dados reais, sem depender de um especialista para cada simulação.</p>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">produto no ar</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">primeira em Portugal</span>
+      <span style="padding: 10px 18px; border-radius: 999px; background: rgba(251,243,224,.12); font-size: 15.5px;">conformidade automática</span>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 76px; padding: 74px 24px 78px; background: #1B2A3A; display: grid; place-items: center;">
+  <a href="https://calculadora.rfai.pt/" target="_blank" rel="noopener" style="display: inline-flex; align-items: baseline; gap: 4px; animation: respiraLogo 6.5s ease-in-out infinite; color: #FFFBF0; font-family: 'Baloo 2', cursive; font-weight: 800; font-size: clamp(44px, 6vw, 76px); letter-spacing: -.01em; font-style: italic;" style-hover="color: #F2B32C;">
+    RF<span style="color: #E8412A;">AI</span>
+  </a>
+</div>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 40px 28px 90px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+  <a href="index.html" style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 17px;">← voltar pra feira</a>
+  <a href="Case Naches.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #F2B32C; color: #2C2118; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 18px; box-shadow: 0 5px 0 #D19A1F;" style-hover="transform: translateY(3px); box-shadow: 0 2px 0 #D19A1F; color: #2C2118;">próximo case: Naches →</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;corAcento&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#EE8B3C&quot;,&quot;options&quot;:[&quot;#EE8B3C&quot;,&quot;#E8412A&quot;,&quot;#3E7333&quot;,&quot;#1B2A3A&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Aparência&quot;},&quot;duracaoContador&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1400,&quot;min&quot;:600,&quot;max&quot;:3000,&quot;step&quot;:100,&quot;unit&quot;:&quot;ms&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Animação&quot;}}">
+class Component extends DCLogic {
+  state = { aba: 0, progresso: 0 };
+  alvos = [30, 3, 1];
+  sufixos = ['%', '', 'ª'];
+  legendas = [
+    'dashboard: investimento total, investimento por rubrica, investimento elegível e benefício por ano na mesma vista',
+    'cadastro em três passos: informação da empresa, informação jurídica e fiscal, localização'
+  ];
+
+  componentDidMount() {
+    const faixa = document.querySelector('[data-contadores]');
+    if (!faixa || typeof IntersectionObserver === 'undefined') { this.animar(); return; }
+    this.observer = new IntersectionObserver(entradas => {
+      entradas.forEach(e => { if (e.isIntersecting) this.animar(); });
+    }, { threshold: 0.35 });
+    this.observer.observe(faixa);
+  }
+
+  componentWillUnmount() {
+    if (this.observer) this.observer.disconnect();
+    if (this.raf) cancelAnimationFrame(this.raf);
+  }
+
+  animar = () => {
+    if (this.raf) cancelAnimationFrame(this.raf);
+    const dur = this.props.duracaoContador ?? 1400;
+    const inicio = performance.now();
+    const passo = agora => {
+      const t = Math.min(1, (agora - inicio) / dur);
+      this.setState({ progresso: 1 - Math.pow(1 - t, 3) });
+      if (t < 1) this.raf = requestAnimationFrame(passo);
+    };
+    this.setState({ progresso: 0 });
+    this.raf = requestAnimationFrame(passo);
+  };
+
+  valor(i) {
+    return Math.round(this.alvos[i] * this.state.progresso) + this.sufixos[i];
+  }
+
+  renderVals() {
+    const aba = this.state.aba;
+    const acento = this.props.corAcento ?? '#EE8B3C';
+    return {
+      acento,
+      legenda: this.legendas[aba],
+      rotuloAba: ['dashboards / overview', 'novo projeto / passo 1'][aba],
+      telaSrc: ['assets/rfai-dashboard.png', 'assets/rfai-formulario.png'][aba],
+      telaAlt: [
+        'Dashboard da calculadora RFAI com gráficos de investimento total, por rubrica e elegível',
+        'Formulário de cadastro da calculadora RFAI, passo de informações da empresa'
+      ][aba],
+      pill0Bg: aba === 0 ? '#FFFBF0' : 'transparent',
+      pill0Sombra: aba === 0 ? '0 2px 0 rgba(44,33,24,.12)' : 'none',
+      pill0Cor: aba === 0 ? '#2C2118' : 'rgba(44,33,24,.55)',
+      pill1Bg: aba === 1 ? '#FFFBF0' : 'transparent',
+      pill1Sombra: aba === 1 ? '0 2px 0 rgba(44,33,24,.12)' : 'none',
+      pill1Cor: aba === 1 ? '#2C2118' : 'rgba(44,33,24,.55)',
+      verDashboard: () => this.setState({ aba: 0 }),
+      verCadastro: () => this.setState({ aba: 1 }),
+      rodarContadores: this.animar,
+      n1: this.valor(0),
+      n2: this.valor(1),
+      n3: this.valor(2)
+    };
+  }
+}
+</script>
+</body>
+</html>
